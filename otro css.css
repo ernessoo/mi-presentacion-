@@ -1,0 +1,32 @@
+.marco-neon {
+      position: relative;
+      display: inline-block;
+      overflow: visible;
+    }
+
+    .marco-neon img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .marco-neon::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: maroon;
+      box-shadow: 0 0 10px maroon, 0 0 20px maroon, 0 0 30px maroon, 0 0 40px maroon;
+      z-index: -1;
+      animation: neon 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }

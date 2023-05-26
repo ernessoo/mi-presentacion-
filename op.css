@@ -1,0 +1,34 @@
+@font.face{
+    font-family: "Mukta";
+    src: url('Mukta-regular.ttf')
+}
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta';
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+neon{
+    font-size: 2em;
+    font-weight: 200;
+    color: green;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.neon:hover{
+    color: #dfaad1;
+    text-shadow: 0 0 5px ivory,
+    0 0 25px lavenderblush,
+    0 0 50px maroon,
+    0 0 100px blueviolet;
+}
